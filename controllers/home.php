@@ -1,6 +1,8 @@
 <?php
 class Home extends Controller{
     protected function Index(){
-      echo ' return ghada Home/index';  
+
+    $viewmodel=new HomeModel();
+    $this->returnView($viewModel->Index(),true);
     }
 }

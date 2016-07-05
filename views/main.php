@@ -3,13 +3,13 @@
         <title >
             shareboard
         </title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet">       
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="<?= ROOT_PATH;?>/assets/css/bootstrap.css" rel="stylesheet">       
+    <link rel="stylesheet" href="<?= ROOT_PATH;?>/assets/css/style.css">
 
     </head>
     <body>
         
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -22,8 +22,12 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="<?php echo ROOT_URL; ?>">Home</a></li>
-            <li><a href="<?php echo ROOT_URL; ?>">Shares</a></li>
+            <li><a href="<?= ROOT_URL; ?>">Home</a></li>
+            <li><a href="<?= ROOT_URL; ?>/shares">Shares</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="<?= ROOT_URL; ?>/users/login">Login</a></li>
+            <li><a href="<?=ROOT_URL; ?>/users/register">Register</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

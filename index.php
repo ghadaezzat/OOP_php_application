@@ -1,9 +1,11 @@
 <?php
 
 require('config.php');
+require('classes/Messages.php');
 require('classes/Bootstrap.php');
 require('classes/Controller.php');
 require('classes/model.php');
+
 
 require('controllers/home.php');
 require('controllers/users.php');

@@ -42,7 +42,9 @@
 
     <div class="container">
        
-        <p class="lead" style="margin-top: 50px;"><?php require($view); ?></p>
+        <div class='row' style='margin-top: 50px;'>
+            <?php Messages::display(); ?>
+            <?php require($view); ?></div>
 
     </div><!-- /.container -->
 

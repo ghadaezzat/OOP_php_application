@@ -1,7 +1,7 @@
 <?php
 class ShareModel extends Model {
    public function Index(){
-       $this->query('select * from shares');
+       $this->query('select * from shares order by date');
        $rows=$this->resultSet();
        return $rows;
     }
@@ -18,12 +18,11 @@ class ShareModel extends Model {
 			$this->bind(':user_id', 1);
 			$this->execute();
 			// Verify
-                        var_dump($this->lastInsertId());
-                        exit();
-           /*if ($this->lastInsertId()){
+                      
+           if ($this->lastInsertId()){
                header('location:'.ROOT_URL.'/shares');
            }
-*/
+
            return;
            }
    }

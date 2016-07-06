@@ -6,8 +6,13 @@ class Shares extends Controller{
    $this->returnView($viewmodel->Index(),true);
   }
     protected function add(){
+        if (!isset($_SESSION['is_logged_in'])){
+             header('Location:'.ROOT_URL.'/shares');
+        }
+        
     $viewmodel=new ShareModel();
     //true as we want the main layout template
    $this->returnView($viewmodel->add(),true);
-  }
+    
+        }
 }

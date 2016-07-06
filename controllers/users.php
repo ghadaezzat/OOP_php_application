@@ -12,7 +12,7 @@ class Users extends Controller{
         unset($_SESSION['is_logged_in']);
         unset($_SESSION['user_data']);
         session_destroy();
-        header('location:'.ROOT_URL);
+        header('Location:'.ROOT_URL);
 
 
     }

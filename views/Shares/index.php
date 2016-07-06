@@ -1,5 +1,5 @@
 <div>
-    <?php if (isset($SESSION['is_looged_in'])) :?>
+    <?php if (isset($_SESSION['is_logged_in'])) :?>
     <a class="btn btn-success btn-share" href="<?= ROOT_PATH; ?>/shares/add">
         add share
     </a>
